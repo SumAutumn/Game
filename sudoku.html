@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="shared.css" />
+        <link rel="stylesheet" type="text/css" href="sudoku.css" />
+        <title>Sudoku</title>
+        <script type="module" src="main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+    <h1>Sudoku</h1>
+    <h4 id="attempt"></h4>
+
+    <div class="container">
+        <div class="inner-container">
+            <div class="dummy"></div>
+
+            <form id="x9" class="grid">
+
+                <input class="box bl bt" type="text" maxlength="1" value="7" readonly>
+                <input class="box bt" type="text" maxlength="1">
+                <input class="box br bt" type="text" maxlength="1" value="9" readonly>
+                <input class="box bt" type="text" maxlength="1">
+                <input class="box bt" type="text" maxlength="1" value="2" readonly>
+                <input class="box br bt" type="text" maxlength="1" value="3" readonly>
+                <input class="box bt" type="text" maxlength="1">
+                <input class="box bt" type="text" maxlength="1" value="5" readonly>
+                <input class="box br bt" type="text" maxlength="1" value="6" readonly>
+
+                <input class="box bl" type="text" maxlength="1" value="1" readonly>
+                <input class="box" type="text" maxlength="1" value="2" readonly>
+                <input class="box br" type="text" maxlength="1">
+                <input class="box" type="text" maxlength="1" value="4" readonly>
+                <input class="box" type="text" maxlength="1">
+                <input class="box br" type="text" maxlength="1" value="6" readonly>
+                <input class="box" type="text" maxlength="1" value="7" readonly>
+                <input class="box" type="text" maxlength="1" value="8" readonly>
+                <input class="box br" type="text" maxlength="1">
+
+                <input class="box bl bb" type="text" maxlength="1" value="4" readonly>
+                <input class="box bb" type="text" maxlength="1">
+                <input class="box br bb" type="text" maxlength="1" value="6" readonly>
+                <input class="box bb" type="text" maxlength="1" value="7" readonly>
+                <input class="box bb" type="text" maxlength="1">
+                <input class="box br bb" type="text" maxlength="1" value="9" readonly>
+                <input class="box bb" type="text" maxlength="1" value="1" readonly>
+                <input class="box bb" type="text" maxlength="1">
+                <input class="box br bb" type="text" maxlength="1" value="3" readonly>
+
+                <input class="box bl" type="text" maxlength="1">
+                <input class="box" type="text" maxlength="1" value="1" readonly>
+                <input class="box br" type="text" maxlength="1">
+                <input class="box" type="text" maxlength="1" value="3" readonly>
+                <input class="box" type="text" maxlength="1">
+                <input class="box br" type="text" maxlength="1" value="5" readonly>
+                <input class="box" type="text" maxlength="1" value="8" readonly>
+                <input class="box" type="text" maxlength="1" value="9" readonly>
+                <input class="box br" type="text" maxlength="1" value="7" readonly>
+
+                <input class="box bl" type="text" maxlength="1">
+                <input class="box" type="text" maxlength="1" value="6" readonly>
+                <input class="box br" type="text" maxlength="1" value="5" readonly>
+                <input class="box" type="text" maxlength="1" value="8" readonly>
+                <input class="box" type="text" maxlength="1" value="9" readonly>
+                <input class="box br" type="text" maxlength="1">
+                <input class="box" type="text" maxlength="1">
+                <input class="box" type="text" maxlength="1" value="1" readonly>
+                <input class="box br" type="text" maxlength="1" value="4" readonly>
+
+                <input class="box bl bb" type="text" maxlength="1" value="8" readonly>
+                <input class="box bb" type="text" maxlength="1">
+                <input class="box bb br" type="text" maxlength="1" value="7" readonly>
+                <input class="box bb" type="text" maxlength="1">
+                <input class="box bb" type="text" maxlength="1" value="1" readonly>
+                <input class="box bb br" type="text" maxlength="1" value="4" readonly>
+                <input class="box bb" type="text" maxlength="1" value="3" readonly>
+                <input class="box bb" type="text" maxlength="1">
+                <input class="box bb br" type="text" maxlength="1" value="5" readonly>
+
+                <input class="box bl" type="text" maxlength="1" value="5" readonly>
+                <input class="box" type="text" maxlength="1" value="3" readonly>
+                <input class="box br" type="text" maxlength="1" value="1" readonly>
+                <input class="box" type="text" maxlength="1" value="6" readonly>
+                <input class="box" type="text" maxlength="1" value="4" readonly>
+                <input class="box br" type="text" maxlength="1" value="2" readonly>
+                <input class="box" type="text" maxlength="1" value="9" readonly>
+                <input class="box" type="text" maxlength="1">
+                <input class="box br" type="text" maxlength="1">
+
+                <input class="box bl" type="text" maxlength="1">
+                <input class="box" type="text" maxlength="1" value="7" readonly>
+                <input class="box br" type="text" maxlength="1">
+                <input class="box" type="text" maxlength="1">
+                <input class="box" type="text" maxlength="1">
+                <input class="box br" type="text" maxlength="1">
+                <input class="box" type="text" maxlength="1" value="6" readonly>
+                <input class="box" type="text" maxlength="1" value="4" readonly>
+                <input class="box br" type="text" maxlength="1" value="2" readonly>
+
+                <input class="box bl bb" type="text" maxlength="1" value="6" readonly>
+                <input class="box bb" type="text" maxlength="1" value="4" readonly>
+                <input class="box br bb" type="text" maxlength="1">
+                <input class="box bb" type="text" maxlength="1" value="9" readonly>
+                <input class="box bb" type="text" maxlength="1" value="7" readonly>
+                <input class="box br bb" type="text" maxlength="1" value="8" readonly>
+                <input class="box bb" type="text" maxlength="1">
+                <input class="box bb" type="text" maxlength="1" value="3" readonly>
+                <input class="box br bb" type="text" maxlength="1" value="1" readonly>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <p id="error-message"></p>
+        <button id="clear" class="button">Clear</button>
+        <button id="solve" class="button">Solve</button>
+    </div>
+    </body>
+    <script type="module" src="sudoku.js"></script>
+</html>

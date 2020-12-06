@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="shared.css" />
+        <script type="module" src="main.js"></script>
+        <script type="module" src="blackjack.js"></script>
+    </head>
+
+    <body>
+        <h1 id="title">Blackjack</h1>
+        <h4 id="attempt"></h4>
+
+        <div class='text' id="content">
+            <span id="dealer-card"></span>
+            <span class='containers' id='dealer-container'></span>
+            <p class='text' id="score"></p>
+            <p class='result' id='result'></p>
+            <div class="padding center button">
+                <br>
+                <button type='button' id="new-game-button">
+                    <span class='button_text'>Start</span>
+                </button>
+                <button type='button' id="hit-button">
+                    <span class='button_text'>Hit!</span>
+                </button>
+                <button type='button' id="stay-button">
+                    <span class='button_text'>Stay!</span>
+                </button>
+                <button type='button' id="restart-button">
+                    <span class='button_text'>Restart</span>
+                </button>
+                <br>
+            </div>
+            <br>
+            <br>
+            <span id="player-card"></span>
+            <span class='containers' id='player-container'></span>
+        </div>
+    </body>
+
+</html>

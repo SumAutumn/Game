@@ -1,0 +1,86 @@
+.container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.inner-container {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    width: 75%;
+    min-width: 200px;
+    max-width: 500px;
+}
+
+.dummy {
+    margin-top: 100%;
+}
+
+.grid {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.box {
+    text-align: center;
+    box-sizing: border-box;
+    border: 0.5px solid lightgray;
+    float: left;
+    background: white;
+}
+
+#x4 .box {
+    width: 25%;
+    height: 25%;
+    font-size: 40px;
+}
+
+#x6 .box {
+    width: 16.6%;
+    height: 16.6%;
+    font-size: 25px;
+}
+
+#x9 .box {
+    width: 11.1%;
+    height: 11.1%;
+    font-size: 16px;
+}
+
+.bt {
+    border-top: 2px solid black;
+}
+
+.bb {
+    border-bottom: 2px solid black;
+}
+
+.bl {
+    border-left: 2px solid black;
+}
+
+.br {
+    border-right: 2px solid black;
+}
+
+.hide {
+    display: none;
+}
+
+#error-message {
+    color: #ffa500;
+    font-size: 16px;
+}
+
+#solve {
+    background: dimgrey;
+    color: white;
+}
+
+#clear {
+    background: lightslategray;
+    color: white;
+}

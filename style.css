@@ -1,0 +1,217 @@
+html {
+  font-family: Helvetica;
+  background-color: steelblue;
+}
+h1 {
+  color: white;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding: 10px;
+}
+p {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+}
+html {
+  font-size: 18px;
+}
+body {
+  opacity: 1;
+}
+div {
+  border: 1px solid transparent;
+  position: relative;
+}
+button {
+  background-color: darkslategrey;
+  border: 1px solid lightslategrey;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 6em;
+  height: 3em;
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  z-index: 10;
+}
+.bottom_center {
+  top: 600px;
+  margin: 20px;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.text {
+  text-align: left;
+  position: relative;
+  font-size: 18px;
+}
+#score {
+  height: 60px;
+  text-align: center;
+}
+.result {
+  font-size: 18px;
+  color: salmon;
+  text-align: center;
+  position: relative;
+  display: none;
+  width: 100%;
+}
+span {
+  color: white;
+  size: auto;
+  opacity: 1;
+}
+.containers {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  background-color: transparent;
+}
+.cards {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.card {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 165px;
+  font: 12px 'Trebuchet MS';
+  margin: 10px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+}
+.card:before,
+.card:after {
+  content: attr(value);
+  position: absolute;
+  width: 12px;
+  text-align: center;
+  letter-spacing: -2px;
+}
+.card:before {
+  top: 5px;
+  left: 5px;
+}
+.card:after {
+  bottom: 5px;
+  right: 5px;
+  transform: rotate(180deg);
+}
+.card--heart {
+  color: #e44145;
+}
+.card--heart:before,
+.card--heart:after {
+  content: attr(value) " \2665";
+}
+.card--spade {
+  color: #252525;
+}
+.card--spade:before,
+.card--spade:after {
+  content: attr(value) ' \2660';
+}
+.card--diamond {
+  color: #e44145;
+}
+.card--diamond:before,
+.card--diamond:after {
+  content: attr(value) ' \2666';
+}
+.card--club {
+  color: #252525;
+}
+.card--club:before,
+.card--club:after {
+  content: attr(value) ' \2663';
+}
+.card__inner {
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+}
+.card__inner--centered {
+  justify-content: center;
+}
+.card__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card__column--centered {
+  justify-content: center;
+}
+.card__symbol {
+  display: inline-block;
+  height: 25px;
+  text-align: center;
+}
+.card__symbol:before {
+  font-size: 25px;
+  line-height: 25px;
+}
+.card--heart .card__symbol:before {
+  content: "\2665";
+}
+.card--spade .card__symbol:before {
+  content: "\2660";
+}
+.card--club .card__symbol:before {
+  content: "\2663";
+}
+.card--diamond .card__symbol:before {
+  content: "\2666";
+}
+.card--back .card__symbol:before {
+  content: "\01F0A0";
+}
+.card--J .card__symbol:before {
+  content: "\265E";
+}
+.card--Q .card__symbol:before {
+  content: "\265B";
+}
+.card--K .card__symbol:before {
+  content: "\265A";
+}
+.card__symbol--rotated,
+.card__symbol:last-of-type {
+  transform: rotate(180deg);
+}
+.card__symbol:first-of-type {
+  transform: rotate(0);
+}
+.card__symbol--big {
+  flex-basis: 41.25px;
+}
+.card__symbol--huge {
+  flex-basis: 74.25px;
+  top: 35px;
+}
+.card__symbol--special {
+  flex-basis: 82.5px;
+  top: 40px;
+}
+.card__symbol__special:before {
+  font-size: 160px;
+  line-height: 0;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */

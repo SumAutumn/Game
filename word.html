@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Word</title>
+    <link rel="stylesheet" type="text/css" href="word.css" />
+    <link rel="stylesheet" type="text/css" href="shared.css" />
+</head>
+<body>
+    <h1 id="title">Word</h1>
+    <h4 id="attempt"></h4>
+    <div>
+        <div style="left:50%; line-height: 50px; text-align: center;">
+            <button type='button' id="start">
+                <span class='button_text'>Start</span>
+            </button>
+        </div>
+        <div>
+            <p id="error-message" style="text-align: center"></p>
+        </div>
+    </div>
+    <div><br></div>
+    <div id="container">
+        <table width=100%>
+            <tr>
+                <td>
+                    <table id="table">
+                        <tr>
+                            <td><div id="box0" class="letterBox"></div></td>
+                            <td><div id="box1" class="letterBox"></div></td>
+                            <td><div id="box2" class="letterBox"></div></td>
+                        </tr>
+                        <tr>
+                            <td><div id="box3" class="letterBox"></div></td>
+                            <td><div id="box4" class="letterBox"></div></td>
+                            <td><div id="box5" class="letterBox"></div></td>
+                        </tr>
+                        <tr>
+                            <td><div id="box6" class="letterBox"></div></td>
+                            <td><div id="box7" class="letterBox"></div></td>
+                            <td><div id="box8" class="letterBox"></div></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container bottom">
+        <br>
+        <div id="form">
+            <div>
+                <form>
+                    <input type="text" id="word" name="word" placeholder="Enter answer here.."><br>
+                </form>
+            </div>
+            <br>
+            <div class="bottom_center">
+                <button class="container" id="submit" type="submit">
+                    <span class='button_text'>Solve</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+<script type="module" src="word.js"></script>
+</html>
